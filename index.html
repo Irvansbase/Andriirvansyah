@@ -10,7 +10,7 @@
 </head>
 <body class="border-solid flex flex-col bg-amber-100">
   <header class="bg-gray-700 sticky top-4 sm:top-6 md:top-8 shadow rounded-2xl my-4 sm:my-5 md:my-6 mx-4 sm:mx-16 md:mx-32 px-4">
-    <nav class="text-green-300 container mx-auto py-3 sm:py-4 flex justify-between items-center">
+    <nav class="text-green-300 container mx-auto py-3 sm:py-4 flex justify-between items-center z-50">
       <a href="" class="font-bold text-3xl sm:text-1xl px-5 py-2">Andri Irvansyah</a>
       
       <!-- Hamburger Button (visible on mobile and tablet) -->
@@ -41,26 +41,28 @@
       <p>Hi, I'm Irvansyah! I prefer working behind the scenes—designing backend systems, building APIs, and ensuring that data flows smoothly behind an application. My passion lies in logic, structure, and server stability. If the frontend is the face, the backend is the brain, and I choose to be the brain.</p>
     </div>
 
-    <div class="mx-4 sm:mx-12 md:mx-28 px-4 sm:px-6 md:px-9 h-screen flex flex-col justify-center">
-      <div class="relative w-64 h-80 sm:w-80 sm:h-96 md:w-96 md:h-[28rem] group">
-        <!-- Main photo with border and shadow -->
-        <div class="absolute w-full h-full -right-3 -bottom-3 bg-green-100 rounded-lg"></div>
+    <div class="mx-4 sm:mx-12 md:mx-28 px-4 sm:px-6 md:px-9 h-screen flex flex-col justify-center items-center">
+      <div class="relative w-48 h-60 xs:w-56 xs:h-72 sm:w-64 sm:h-80 md:w-80 md:h-96 lg:w-96 lg:h-[28rem] xl:w-[28rem] xl:h-[32rem] 2xl:w-[32rem] 2xl:h-[36rem] group">
+        <!-- Background layer for depth effect -->
+        <div class="absolute w-full h-full -right-2 -bottom-2 xs:-right-3 xs:-bottom-3 bg-green-100 rounded-lg"></div>
         
-        <!-- Photo container with elegant border -->
-        <div class="absolute w-full h-full border-4 border-white rounded-lg overflow-hidden shadow-xl transition-all duration-300 group-hover:scale-105">
-          <!-- Your photo goes here - replace with actual image source -->
-          <img src="/img/pp.jpg" alt="Andri Irvansyah" class="w-full h-full object-cover object-center">
+        <!-- Main photo container -->
+        <div class="relative w-full h-full border-4 border-white rounded-lg overflow-hidden shadow-lg md:shadow-xl transition-all duration-300 group-hover:scale-[1.02]">
+          <!-- Your photo - ensure it's responsive -->
+          <img src="https://www.alleycat.org/wp-content/uploads/2019/03/FELV-cat.jpg" alt="Andri Irvansyah" class="w-full h-full object-cover object-center rounded-xl -z-50
+          " loading="lazy">
+
           
-          <!-- Decorative corner elements -->
-          <div class="absolute top-0 left-0 w-12 h-12 border-t-4 border-l-4 border-green-500"></div>
-          <div class="absolute top-0 right-0 w-12 h-12 border-t-4 border-r-4 border-green-500"></div>
-          <div class="absolute bottom-0 left-0 w-12 h-12 border-b-4 border-l-4 border-green-500"></div>
-          <div class="absolute bottom-0 right-0 w-12 h-12 border-b-4 border-r-4 border-green-500"></div>
+          <!-- Decorative corners - responsive sizing -->
+          <div class="absolute top-0 left-0 w-8 h-8 sm:w-10 sm:h-10 md:w-12 md:h-12 border-t-4 border-l-4 border-green-500"></div>
+          <div class="absolute top-0 right-0 w-8 h-8 sm:w-10 sm:h-10 md:w-12 md:h-12 border-t-4 border-r-4 border-green-500"></div>
+          <div class="absolute bottom-0 left-0 w-8 h-8 sm:w-10 sm:h-10 md:w-12 md:h-12 border-b-4 border-l-4 border-green-500"></div>
+          <div class="absolute bottom-0 right-0 w-8 h-8 sm:w-10 sm:h-10 md:w-12 md:h-12 border-b-4 border-r-4 border-green-500"></div>
         </div>
         
-        <!-- Optional decorative elements -->
-        <div class="absolute -top-4 -left-4 w-8 h-8 bg-green-400 rounded-full opacity-70 group-hover:opacity-100 transition-opacity"></div>
-        <div class="absolute -bottom-4 -right-4 w-8 h-8 bg-green-400 rounded-full opacity-70 group-hover:opacity-100 transition-opacity"></div>
+        <!-- Decorative elements - responsive positioning -->
+        <div class="absolute -top-3 -left-3 xs:-top-4 xs:-left-4 w-6 h-6 xs:w-7 xs:h-7 sm:w-8 sm:h-8 bg-green-400 rounded-full opacity-70 group-hover:opacity-100 transition-opacity"></div>
+        <div class="absolute -bottom-3 -right-3 xs:-bottom-4 xs:-right-4 w-6 h-6 xs:w-7 xs:h-7 sm:w-8 sm:h-8 bg-green-400 rounded-full opacity-70 group-hover:opacity-100 transition-opacity"></div>
       </div>
     </div>
     
