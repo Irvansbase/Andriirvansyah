@@ -1,90 +1,314 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Portofolio Web</title>
-  <link rel="stylesheet" href="./src/output.css">
-  <script src="https://cdn.tailwindcss.com"></script>
-
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Andri Irvansyah - Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body class="border-solid flex flex-col bg-amber-100">
-  <header class="bg-gray-700 sticky top-4 sm:top-6 md:top-8 shadow rounded-2xl my-2 sm:my-5 md:my-6 mx-1 sm:mx-3 md:mx-10 px-3">
-    <nav class="text-green-300 container mx-auto py-2 sm:py-4 flex justify-between items-center">
-      <a href="" class="font-bold text-3xl sm:text-1xl px-5 py-2 ">Andri Irvansyah</a>
-      
-      <!-- Hamburger Button (visible on mobile and tablet) -->
-      <button id="menu-toggle" class="sm:hidden md:hidden focus:outline-none">
-        <svg class="w-6 h-6 " fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
-        </svg>
-      </button>
-      
-      <!-- Navigation Menu -->
-      <ul id="menu" class="hidden sm:flex justify-center items-center bg-gray-700">
-        <li class="px-3 sm:px-5 md:px-3 py-1.5 hover:text-white"><a href="">About Me</a></li>
-        <li class="px-3 sm:px-5 md:px-3 py-1.5 hover:text-white"><a href="">Project</a></li>
-        <li class="px-3 sm:px-5 md:px-3 py-1.5 hover:text-white"><a href="">Education</a></li>
-        <li class="px-3 sm:px-5 md:px-3 py-1.5 hover:text-white">
-          <a href="" class="border-2 border-amber-300 py-1 sm:py-2 px-2 sm:px-2 md:px-5 rounded-3xl hover:bg-amber-300 hover:text-amber-950 transition duration-300">Hire Me</a>
-        </li>
-      </ul>
-    </nav>
-  </header>
+<body class="bg-gray-50 font-sans">
+    <!-- Header/Navigation -->
+    <header class="bg-gray-800 sticky top-0 z-50 shadow-lg">
+        <nav class="container mx-auto px-4 py-3 flex justify-between items-center">
+            <a href="#" class="text-green-400 font-bold text-xl md:text-2xl hover:text-white transition">Andri Irvansyah</a>
+            
+            <!-- Mobile Menu Button -->
+            <button id="menu-toggle" class="md:hidden text-green-400 focus:outline-none">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                </svg>
+            </button>
+            
+            <!-- Desktop Menu -->
+            <div id="menu" class="hidden md:flex space-x-1">
+                <a href="#about" class="px-3 py-2 text-green-400 hover:text-white hover:bg-gray-700 rounded transition">About</a>
+                <a href="#projects" class="px-3 py-2 text-green-400 hover:text-white hover:bg-gray-700 rounded transition">Projects</a>
+                <a href="#certificates" class="px-3 py-2 text-green-400 hover:text-white hover:bg-gray-700 rounded transition">Certificates</a>
+                <a href="#contact" class="px-3 py-2 text-green-400 hover:text-white hover:bg-gray-700 rounded transition">Contact</a>
+                <a href="#contact" class="ml-2 px-4 py-2 bg-green-600 text-white rounded-full hover:bg-green-700 transition">Hire Me</a>
+            </div>
+        </nav>
+    </header>
 
-  <!-- hero -->
-  <section class="flex justify-between">
-
-    <div class="mx-4 sm:mx-12 md:mx-28 px-4 sm:px-6 md:px-9 pt-16 container flex flex-col justify-center">
-      <h4 class="text-4xl sm:text-2xl md:text-4xl my-3 font-bold text-gray-800 py-4">Hi I'm Andri Irvansyah</h4>
-      <h4 class="text-2xl sm:text-2xl md:text-2xl my-3 sm:my-4 font-bold text-green-600 text-left">Back End Developer</h4>
-      <p class="text-xl">
-        Hi, I'm Irvansyah! I thrive behind the scenes—building the backbone of applications where logic, structure, and stability are key. As a backend developer, I focus on designing solid systems, creating reliable APIs, and ensuring smooth, secure data flow.
-
-I'm driven not just by coding, but by solving real problems that make systems smarter and more efficient. While the frontend is what users see, I believe the backend is the brain—it’s where decisions are made and the real engine runs.
-
-To me, backend work is like crafting a strong foundation. From managing databases to scaling servers, I love turning complex logic into clean, powerful solutions that keep everything running smoothly.
-
-If you're looking for someone who builds the invisible but essential parts of great software—I'm that guy.
-
-</p>
-      
-      <div flex class="flex-col justify-center">
-     <button class="border-4 font-bold border-blue-800 my-9 py-4 px-3 sm:py-2 sm:px-3 md:px-5 rounded-3xl hover:bg-blue-800 hover:text-white transition duration-300">Download CV</button>
-     
+    <!-- Mobile Menu (hidden by default) -->
+    <div id="mobile-menu" class="hidden md:hidden bg-gray-800 pb-4 px-4">
+        <a href="#about" class="block px-3 py-2 text-green-400 hover:text-white hover:bg-gray-700 rounded transition">About</a>
+        <a href="#projects" class="block px-3 py-2 text-green-400 hover:text-white hover:bg-gray-700 rounded transition">Projects</a>
+        <a href="#certificates" class="block px-3 py-2 text-green-400 hover:text-white hover:bg-gray-700 rounded transition">Certificates</a>
+        <a href="#contact" class="block px-3 py-2 text-green-400 hover:text-white hover:bg-gray-700 rounded transition">Contact</a>
     </div>
-  </div>
 
-   
-    
-  </section>
+    <!-- Hero Section -->
+    <section class="py-12 md:py-20 bg-gradient-to-r from-gray-900 to-gray-800 text-white">
+        <div class="container mx-auto px-4 flex flex-col md:flex-row items-center">
+            <div class="md:w-1/2 mb-8 md:mb-0">
+                <h1 class="text-4xl md:text-5xl font-bold mb-4">Hi, I'm <span class="text-amber-400">Andri Irvansyah</span></h1>
+                <h2 class="text-2xl md:text-3xl text-green-400 mb-6">Backend Developer</h2>
+                <p class="text-lg mb-8">I build robust and scalable server-side applications with clean, efficient code.</p>
+                <a href="#contact" class="inline-block px-8 py-3 bg-green-600 text-white rounded-full hover:bg-green-700 transition">Get In Touch</a>
+            </div>
+            <div class="md:w-1/2 flex justify-center">
+                <div class="relative w-64 h-64 md:w-80 md:h-80">
+                    <div class="absolute inset-0 rounded-full border-8 border-amber-400 transform rotate-6"></div>
+                    <div class="absolute inset-0 rounded-full border-8 border-green-500 transform -rotate-6"></div>
+                    <img src="https://lh3.googleusercontent.com/pw/AP1GczPol-n_4tbDYXtuutfhD18SPRs13tJ24k7ILb79QqW2NcGHoppJkUgcssnA06Rj3YvTzkxy_n6f4s3Bh0s4WZ6Yo7VzlVtsIzsEd8vHPrlaPu4htY-aDMY-5tsqGnhPasHQUGP7dQg2QVCgVMCxzooB=w738-h919-s-no-gm?authuser=0" alt="Andri Irvansyah" class="absolute inset-0 w-full h-full rounded-full object-cover border-4 border-white z-10 shadow-xl">
+                </div>
+            </div>
+        </div>
+    </section>
 
+    <!-- About Me Section -->
+    <section id="about" class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl md:text-4xl font-bold text-center mb-12 text-gray-800">About <span class="text-amber-500">Me</span></h2>
+            
+            <div class="flex flex-col md:flex-row items-center">
+                <div class="md:w-1/2 mb-8 md:mb-0 md:pr-8">
+                    <img src="https://lh3.googleusercontent.com/pw/AP1GczPol-n_4tbDYXtuutfhD18SPRs13tJ24k7ILb79QqW2NcGHoppJkUgcssnA06Rj3YvTzkxy_n6f4s3Bh0s4WZ6Yo7VzlVtsIzsEd8vHPrlaPu4htY-aDMY-5tsqGnhPasHQUGP7dQg2QVCgVMCxzooB=w738-h919-s-no-gm?authuser=0" alt="About Me" class="rounded-lg shadow-xl w-full">
+                </div>
+                <div class="md:w-1/2">
+                    <h3 class="text-2xl font-semibold mb-4 text-gray-800">Backend Developer & Problem Solver</h3>
+                    <p class="text-gray-600 mb-6">
+                        I'm a passionate backend developer with expertise in building scalable and efficient server-side applications. 
+                        My focus is on creating robust APIs, optimizing database performance, and implementing secure authentication systems.
+                    </p>
+                    <div class="mb-6">
+                        <h4 class="text-xl font-semibold mb-3 text-gray-800">My Skills</h4>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="px-3 py-1 bg-gray-200 rounded-full text-gray-800">Node.js</span>
+                            <span class="px-3 py-1 bg-gray-200 rounded-full text-gray-800">Express</span>
+                            <span class="px-3 py-1 bg-gray-200 rounded-full text-gray-800">MongoDB</span>
+                            <span class="px-3 py-1 bg-gray-200 rounded-full text-gray-800">PostgreSQL</span>
+                            <span class="px-3 py-1 bg-gray-200 rounded-full text-gray-800">REST API</span>
+                            <span class="px-3 py-1 bg-gray-200 rounded-full text-gray-800">Docker</span>
+                            <span class="px-3 py-1 bg-gray-200 rounded-full text-gray-800">AWS</span>
+                            <span class="px-3 py-1 bg-gray-200 rounded-full text-gray-800">Git</span>
+                        </div>
+                    </div>
+                    <a href="#" class="inline-block px-6 py-2 border-2 border-amber-500 text-amber-500 rounded-full hover:bg-amber-500 hover:text-white transition">Download CV</a>
+                </div>
+            </div>
+        </div>
+    </section>
 
-  <main>
-    <section></section>
-    <section></section>
-    <section></section>
-  </main>
-  <footer></footer>
+    <!-- Projects Section -->
+    <section id="projects" class="py-16 bg-gray-100">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl md:text-4xl font-bold text-center mb-12 text-gray-800">My <span class="text-green-500">Projects</span></h2>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Project 1 -->
+                <div class="bg-white rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition">
+                    <img src="https://via.placeholder.com/600x400" alt="Project 1" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold mb-2 text-gray-800">E-commerce API</h3>
+                        <p class="text-gray-600 mb-4">A complete REST API for e-commerce platform with product management, user authentication, and payment integration.</p>
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="px-2 py-1 bg-gray-100 rounded text-sm text-gray-800">Node.js</span>
+                            <span class="px-2 py-1 bg-gray-100 rounded text-sm text-gray-800">Express</span>
+                            <span class="px-2 py-1 bg-gray-100 rounded text-sm text-gray-800">MongoDB</span>
+                        </div>
+                        <a href="#" class="text-green-500 hover:text-green-700 font-medium">View Project →</a>
+                    </div>
+                </div>
+                
+                <!-- Project 2 -->
+                <div class="bg-white rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition">
+                    <img src="https://via.placeholder.com/600x400" alt="Project 2" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold mb-2 text-gray-800">Task Management System</h3>
+                        <p class="text-gray-600 mb-4">A backend system for task management with real-time updates, team collaboration features, and analytics dashboard.</p>
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="px-2 py-1 bg-gray-100 rounded text-sm text-gray-800">NestJS</span>
+                            <span class="px-2 py-1 bg-gray-100 rounded text-sm text-gray-800">PostgreSQL</span>
+                            <span class="px-2 py-1 bg-gray-100 rounded text-sm text-gray-800">Socket.io</span>
+                        </div>
+                        <a href="#" class="text-green-500 hover:text-green-700 font-medium">View Project →</a>
+                    </div>
+                </div>
+                
+                <!-- Project 3 -->
+                <div class="bg-white rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition">
+                    <img src="https://via.placeholder.com/600x400" alt="Project 3" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold mb-2 text-gray-800">Authentication Microservice</h3>
+                        <p class="text-gray-600 mb-4">A scalable authentication service with JWT, OAuth 2.0, and role-based access control for multiple applications.</p>
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="px-2 py-1 bg-gray-100 rounded text-sm text-gray-800">Go</span>
+                            <span class="px-2 py-1 bg-gray-100 rounded text-sm text-gray-800">Redis</span>
+                            <span class="px-2 py-1 bg-gray-100 rounded text-sm text-gray-800">Docker</span>
+                        </div>
+                        <a href="#" class="text-green-500 hover:text-green-700 font-medium">View Project →</a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="text-center mt-12">
+                <a href="#" class="inline-block px-8 py-3 bg-green-600 text-white rounded-full hover:bg-green-700 transition">View All Projects</a>
+            </div>
+        </div>
+    </section>
 
-  <script>
-    // Toggle mobile menu
-    const menuToggle = document.getElementById('menu-toggle');
-    const menu = document.getElementById('menu');
-    
-    menuToggle.addEventListener('click', () => {
-      menu.classList.toggle('hidden');
-      menu.classList.toggle('flex');
-      menu.classList.toggle('flex-col');
-      menu.classList.toggle('absolute');
-      menu.classList.toggle('top-24');
-      menu.classList.toggle('right-4');
-      menu.classList.toggle('bg-gray-800');
-      menu.classList.toggle('p-4');
-      menu.classList.toggle('rounded-lg');
-      menu.classList.toggle('z-50');
-    });
-  </script>
+    <!-- Certificates Section -->
+    <section id="certificates" class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl md:text-4xl font-bold text-center mb-12 text-gray-800">My <span class="text-amber-500">Certificates</span></h2>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Certificate 1 -->
+                <div class="bg-gray-50 rounded-lg overflow-hidden shadow-md hover:shadow-lg transition border border-gray-200">
+                    <img src="https://via.placeholder.com/600x400" alt="Certificate 1" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold mb-2 text-gray-800">Backend Development with Node.js</h3>
+                        <p class="text-gray-600 mb-4">Issued by: Tech Academy</p>
+                        <p class="text-gray-500 text-sm">Completed: June 2023</p>
+                    </div>
+                </div>
+                
+                <!-- Certificate 2 -->
+                <div class="bg-gray-50 rounded-lg overflow-hidden shadow-md hover:shadow-lg transition border border-gray-200">
+                    <img src="https://via.placeholder.com/600x400" alt="Certificate 2" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold mb-2 text-gray-800">Database Design & Optimization</h3>
+                        <p class="text-gray-600 mb-4">Issued by: Data Science Institute</p>
+                        <p class="text-gray-500 text-sm">Completed: March 2023</p>
+                    </div>
+                </div>
+                
+                <!-- Certificate 3 -->
+                <div class="bg-gray-50 rounded-lg overflow-hidden shadow-md hover:shadow-lg transition border border-gray-200">
+                    <img src="https://via.placeholder.com/600x400" alt="Certificate 3" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold mb-2 text-gray-800">AWS Certified Developer</h3>
+                        <p class="text-gray-600 mb-4">Issued by: Amazon Web Services</p>
+                        <p class="text-gray-500 text-sm">Completed: January 2024</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
+    <!-- Contact Form Section -->
+    <section id="contact" class="py-16 bg-gray-100">
+        <div class="container mx-auto px-4 max-w-4xl">
+            <h2 class="text-3xl md:text-4xl font-bold text-center mb-12 text-gray-800">Contact <span class="text-green-500">Me</span></h2>
+            
+            <div class="bg-white rounded-lg shadow-lg p-6 md:p-8">
+                <form>
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
+                        <div>
+                            <label for="name" class="block text-gray-700 font-medium mb-2">Your Name</label>
+                            <input type="text" id="name" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-green-500">
+                        </div>
+                        <div>
+                            <label for="company" class="block text-gray-700 font-medium mb-2">Company</label>
+                            <input type="text" id="company" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-green-500">
+                        </div>
+                    </div>
+                    
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
+                        <div>
+                            <label for="email" class="block text-gray-700 font-medium mb-2">Email Address</label>
+                            <input type="email" id="email" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-green-500">
+                        </div>
+                        <div>
+                            <label for="phone" class="block text-gray-700 font-medium mb-2">Phone Number</label>
+                            <input type="tel" id="phone" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-green-500">
+                        </div>
+                    </div>
+                    
+                    <div class="mb-6">
+                        <label for="subject" class="block text-gray-700 font-medium mb-2">Subject</label>
+                        <input type="text" id="subject" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-green-500">
+                    </div>
+                    
+                    <div class="mb-6">
+                        <label for="message" class="block text-gray-700 font-medium mb-2">Your Message</label>
+                        <textarea id="message" rows="5" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-green-500"></textarea>
+                    </div>
+                    
+                    <div class="text-center">
+                        <button type="submit" class="px-8 py-3 bg-green-600 text-white rounded-full hover:bg-green-700 transition focus:outline-none focus:ring-2 focus:ring-green-500 focus:ring-offset-2">Send Message</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-12">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <div class="md:col-span-2">
+                    <h3 class="text-xl font-bold mb-4 text-green-400">Andri Irvansyah</h3>
+                    <p class="mb-4">Backend developer specializing in building robust and scalable server-side applications.</p>
+                    <div class="flex space-x-4">
+                        <a href="#" class="text-gray-300 hover:text-green-400 transition">
+                            <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M12 0c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm-2 16h-2v-6h2v6zm-1-6.891c-.607 0-1.1-.496-1.1-1.109 0-.612.492-1.109 1.1-1.109s1.1.497 1.1 1.109c0 .613-.493 1.109-1.1 1.109zm8 6.891h-1.998v-2.861c0-1.881-2.002-1.722-2.002 0v2.861h-2v-6h2v1.093c.872-1.616 4-1.736 4 1.548v3.359z"/>
+                            </svg>
+                        </a>
+                        <a href="#" class="text-gray-300 hover:text-green-400 transition">
+                            <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                            </svg>
+                        </a>
+                        <a href="#" class="text-gray-300 hover:text-green-400 transition">
+                            <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M19.615 3.184c-3.604-.246-11.631-.245-15.23 0-3.897.266-4.356 2.62-4.385 8.816.029 6.185.484 8.549 4.385 8.816 3.6.245 11.626.246 15.23 0 3.897-.266 4.356-2.62 4.385-8.816-.029-6.185-.484-8.549-4.385-8.816zm-10.615 12.816v-8l8 3.993-8 4.007z"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+                
+                <div>
+                    <h4 class="text-lg font-semibold mb-4 text-green-400">Quick Links</h4>
+                    <ul class="space-y-2">
+                        <li><a href="#about" class="hover:text-green-400 transition">About Me</a></li>
+                        <li><a href="#projects" class="hover:text-green-400 transition">Projects</a></li>
+                        <li><a href="#certificates" class="hover:text-green-400 transition">Certificates</a></li>
+                        <li><a href="#contact" class="hover:text-green-400 transition">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h4 class="text-lg font-semibold mb-4 text-green-400">Contact Info</h4>
+                    <ul class="space-y-2">
+                        <li class="flex items-start">
+                            <svg class="w-5 h-5 mr-2 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/>
+                            </svg>
+                            <span>andri@example.com</span>
+                        </li>
+                        <li class="flex items-start">
+                            <svg class="w-5 h-5 mr-2 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/>
+                            </svg>
+                            <span>+62 812 3456 7890</span>
+                        </li>
+                        <li class="flex items-start">
+                            <svg class="w-5 h-5 mr-2 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/>
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/>
+                            </svg>
+                            <span>Jakarta, Indonesia</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="border-t border-gray-700 mt-8 pt-8 text-center text-gray-400">
+                <p>&copy; 2023 Andri Irvansyah. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript for mobile menu toggle -->
+    <script>
+        document.getElementById('menu-toggle').addEventListener('click', function() {
+            const menu = document.getElementById('mobile-menu');
+            menu.classList.toggle('hidden');
+        });
+    </script>
 </body>
 </html>
