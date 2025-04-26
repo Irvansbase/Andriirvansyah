@@ -13,7 +13,7 @@
             <a href="#" class="text-green-400 font-bold text-xl md:text-2xl hover:text-white transition">Andri Irvansyah</a>
             
             <!-- Mobile Menu Button -->
-            <button id="menu-toggle" class="md:hidden text-green-400 focus:outline-none">
+            <button id="menu-toggle" class="md:hidden hover:text-amber-100 transition duration-300 text-green-400 focus:outline-none">
                 <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
                 </svg>
@@ -28,24 +28,27 @@
                 <a href="#contact" class="ml-2 px-4 py-2 bg-green-600 text-white rounded-full hover:bg-green-700 transition">Hire Me</a>
             </div>
         </nav>
+        
+        <!-- Mobile Menu (hidden by default) -->
+        <div id="mobile-menu" class="hidden md:hidden bg-gray-800 pb-4 px-4 ">
+            <a href="#about" class="block px-3 py-2 text-green-400 hover:text-white hover:bg-gray-700 rounded transition duration-300">About</a>
+            <a href="#projects" class="block px-3 py-2 text-green-400 hover:text-white hover:bg-gray-700 rounded transition duration-300">Projects</a>
+            <a href="#certificates" class="block px-3 py-2 text-green-400 hover:text-white hover:bg-gray-700 rounded transition duration-300">Certificates</a>
+            <a href="#contact" class="block px-3 py-2 text-green-400 hover:text-white hover:bg-gray-700 rounded transition duration-300">Contact</a>
+        </div>
     </header>
 
-    <!-- Mobile Menu (hidden by default) -->
-    <div id="mobile-menu" class="hidden md:hidden bg-gray-800 pb-4 px-4">
-        <a href="#about" class="block px-3 py-2 text-green-400 hover:text-white hover:bg-gray-700 rounded transition">About</a>
-        <a href="#projects" class="block px-3 py-2 text-green-400 hover:text-white hover:bg-gray-700 rounded transition">Projects</a>
-        <a href="#certificates" class="block px-3 py-2 text-green-400 hover:text-white hover:bg-gray-700 rounded transition">Certificates</a>
-        <a href="#contact" class="block px-3 py-2 text-green-400 hover:text-white hover:bg-gray-700 rounded transition">Contact</a>
-    </div>
+    
+    
 
     <!-- Hero Section -->
     <section class="py-12 md:py-20 bg-gradient-to-r from-gray-900 to-gray-800 text-white">
         <div class="container mx-auto px-4 flex flex-col md:flex-row items-center">
             <div class="md:w-1/2 mb-8 md:mb-0">
                 <h1 class="text-4xl md:text-5xl font-bold mb-4">Hi, I'm <span class="text-amber-400">Andri Irvansyah</span></h1>
-                <h2 class="text-2xl md:text-3xl text-green-400 mb-6">Backend Developer</h2>
+                <h2 class="text-2xl md:text-3xl text-green-400 mb-6">Tech Entusiast</h2>
                 <p class="text-lg mb-8">I build robust and scalable server-side applications with clean, efficient code.</p>
-                <a href="#contact" class="inline-block px-8 py-3 bg-green-600 text-white rounded-full hover:bg-green-700 transition">Get In Touch</a>
+                <a href="#contact" class="inline-block px-8 py-3 bg-green-600 text-white rounded-full hover:bg-green-700 transition duration-300">Get In Touch</a>
             </div>
             <div class="md:w-1/2 flex justify-center">
                 <div class="relative w-64 h-64 md:w-80 md:h-80">
@@ -97,8 +100,8 @@
             <h2 class="text-3xl md:text-4xl font-bold text-center mb-12 text-gray-800">My <span class="text-green-500">Projects</span></h2>
             
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-                <!-- Project 1 -->
-                <div class="bg-white rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition">
+                <!-- Project 1 (Visible by default) -->
+                <div class="project-item bg-white rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition">
                     <img src="https://via.placeholder.com/600x400" alt="Project 1" class="w-full h-48 object-cover">
                     <div class="p-6">
                         <h3 class="text-xl font-semibold mb-2 text-gray-800">E-commerce API</h3>
@@ -112,8 +115,8 @@
                     </div>
                 </div>
                 
-                <!-- Project 2 -->
-                <div class="bg-white rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition">
+                <!-- Project 2 (Visible by default) -->
+                <div class="project-item bg-white rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition">
                     <img src="https://via.placeholder.com/600x400" alt="Project 2" class="w-full h-48 object-cover">
                     <div class="p-6">
                         <h3 class="text-xl font-semibold mb-2 text-gray-800">Task Management System</h3>
@@ -127,8 +130,8 @@
                     </div>
                 </div>
                 
-                <!-- Project 3 -->
-                <div class="bg-white rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition">
+                <!-- Project 3 (Visible by default) -->
+                <div class="project-item bg-white rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition">
                     <img src="https://via.placeholder.com/600x400" alt="Project 3" class="w-full h-48 object-cover">
                     <div class="p-6">
                         <h3 class="text-xl font-semibold mb-2 text-gray-800">Authentication Microservice</h3>
@@ -141,13 +144,59 @@
                         <a href="#" class="text-green-500 hover:text-green-700 font-medium">View Project →</a>
                     </div>
                 </div>
+                
+                <!-- Additional Projects (Hidden by default) -->
+                <div class="project-item hidden bg-white rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition">
+                    <img src="https://via.placeholder.com/600x400" alt="Project 4" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold mb-2 text-gray-800">Inventory Management API</h3>
+                        <p class="text-gray-600 mb-4">A comprehensive inventory management system with barcode scanning and reporting features.</p>
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="px-2 py-1 bg-gray-100 rounded text-sm text-gray-800">Python</span>
+                            <span class="px-2 py-1 bg-gray-100 rounded text-sm text-gray-800">Django</span>
+                            <span class="px-2 py-1 bg-gray-100 rounded text-sm text-gray-800">MySQL</span>
+                        </div>
+                        <a href="#" class="text-green-500 hover:text-green-700 font-medium">View Project →</a>
+                    </div>
+                </div>
+                
+                <div class="project-item hidden bg-white rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition">
+                    <img src="https://via.placeholder.com/600x400" alt="Project 5" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold mb-2 text-gray-800">Real-time Chat Application</h3>
+                        <p class="text-gray-600 mb-4">A full-stack chat application with rooms, private messaging, and file sharing capabilities.</p>
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="px-2 py-1 bg-gray-100 rounded text-sm text-gray-800">React</span>
+                            <span class="px-2 py-1 bg-gray-100 rounded text-sm text-gray-800">Node.js</span>
+                            <span class="px-2 py-1 bg-gray-100 rounded text-sm text-gray-800">WebSockets</span>
+                        </div>
+                        <a href="#" class="text-green-500 hover:text-green-700 font-medium">View Project →</a>
+                    </div>
+                </div>
+                
+                <div class="project-item hidden bg-white rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition">
+                    <img src="https://via.placeholder.com/600x400" alt="Project 6" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold mb-2 text-gray-800">Data Processing Pipeline</h3>
+                        <p class="text-gray-600 mb-4">An ETL pipeline for processing large datasets with data validation and transformation capabilities.</p>
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="px-2 py-1 bg-gray-100 rounded text-sm text-gray-800">Python</span>
+                            <span class="px-2 py-1 bg-gray-100 rounded text-sm text-gray-800">Apache Airflow</span>
+                            <span class="px-2 py-1 bg-gray-100 rounded text-sm text-gray-800">BigQuery</span>
+                        </div>
+                        <a href="#" class="text-green-500 hover:text-green-700 font-medium">View Project →</a>
+                    </div>
+                </div>
             </div>
             
-            <div class="text-center mt-12">
-                <a href="#" class="inline-block px-8 py-3 bg-green-600 text-white rounded-full hover:bg-green-700 transition">View All Projects</a>
+            <div class="text-center mt-10">
+                <button id="showMoreProjectsBtn" class="px-8 py-3 bg-green-600 text-white rounded-full hover:bg-green-700 transition">
+                    Show More Projects
+                </button>
             </div>
         </div>
     </section>
+    
 
     <!-- Certificates Section -->
     <section id="certificates" class="py-16 bg-white">
@@ -155,35 +204,132 @@
             <h2 class="text-3xl md:text-4xl font-bold text-center mb-12 text-gray-800">My <span class="text-amber-500">Certificates</span></h2>
             
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-                <!-- Certificate 1 -->
-                <div class="bg-gray-50 rounded-lg overflow-hidden shadow-md hover:shadow-lg transition border border-gray-200">
-                    <img src="https://via.placeholder.com/600x400" alt="Certificate 1" class="w-full h-48 object-cover">
+                <!-- Certificate 1 (Visible by default) -->
+                <div class="certificate-item bg-gray-50 rounded-lg overflow-hidden shadow-md hover:shadow-lg transition border border-gray-200">
+                    <img src="https://lh3.googleusercontent.com/pw/AP1GczN8HE_g69HFGqYUURp3pJSNikBmCxx2uQm_Vc2t8N2qf61utg6c_NdmP_fzVM3Y8XrORY5oqvAyzTFIR4wvp4DHMoB10_FXAAfknJqOUmxolgH0MMWj4NdknRcUnAah8gihGsZRDCT4arC6AtsbDtwp=w1229-h827-s-no-gm?authuser=0" alt="Certificate 1" class="w-full h-48 object-cover">
                     <div class="p-6">
                         <h3 class="text-xl font-semibold mb-2 text-gray-800">Backend Development with Node.js</h3>
-                        <p class="text-gray-600 mb-4">Issued by: Tech Academy</p>
+                        <p class="text-gray-600 mb-4">Issued by: FreeCodeCamp</p>
                         <p class="text-gray-500 text-sm">Completed: June 2023</p>
                     </div>
                 </div>
                 
-                <!-- Certificate 2 -->
-                <div class="bg-gray-50 rounded-lg overflow-hidden shadow-md hover:shadow-lg transition border border-gray-200">
-                    <img src="https://via.placeholder.com/600x400" alt="Certificate 2" class="w-full h-48 object-cover">
+                <!-- Certificate 2 (Visible by default) -->
+                <div class="certificate-item bg-gray-50 rounded-lg overflow-hidden shadow-md hover:shadow-lg transition border border-gray-200">
+                    <img src="https://lh3.googleusercontent.com/pw/AP1GczMCprE92otc0ZjZTctOg7ShS05B4PhBHhPatulN4LTMQBSnyFLTczbfU17K2w6h4l7QJoVtZ6iyxBDDg9HHZxffcpobj_k9BSXgAP0dTFp9wNbD_dFMWPlSmUYJkWqUhuosaxPpWKrOmF3AfGT_RaaJ=w1299-h919-s-no-gm?authuser=0" alt="Certificate 2" class="w-full h-48 object-cover">
                     <div class="p-6">
                         <h3 class="text-xl font-semibold mb-2 text-gray-800">Database Design & Optimization</h3>
-                        <p class="text-gray-600 mb-4">Issued by: Data Science Institute</p>
+                        <p class="text-gray-600 mb-4">Issued by: Dicoding Academy</p>
                         <p class="text-gray-500 text-sm">Completed: March 2023</p>
                     </div>
                 </div>
                 
-                <!-- Certificate 3 -->
-                <div class="bg-gray-50 rounded-lg overflow-hidden shadow-md hover:shadow-lg transition border border-gray-200">
-                    <img src="https://via.placeholder.com/600x400" alt="Certificate 3" class="w-full h-48 object-cover">
+                <!-- Certificate 3 (Visible by default) -->
+                <div class="certificate-item bg-gray-50 rounded-lg overflow-hidden shadow-md hover:shadow-lg transition border border-gray-200">
+                    <img src="https://lh3.googleusercontent.com/pw/AP1GczPDGmiMvJWUICxU0B-vHg5CJHTpqUBfoKxsp3-svsVdkMpbX7kgBXA4B6sdZ9jL94epjsXQJjs9q8bUhExvRTfOcCandiGXXYgpqPOltLF3_zXWdXQnRDI13dQtsmZZiuHh-dh7-MDuiXD9n-gd9BRJ=w1299-h919-s-no-gm?authuser=0" alt="Certificate 3" class="w-full h-48 object-cover">
                     <div class="p-6">
                         <h3 class="text-xl font-semibold mb-2 text-gray-800">AWS Certified Developer</h3>
-                        <p class="text-gray-600 mb-4">Issued by: Amazon Web Services</p>
+                        <p class="text-gray-600 mb-4">Issued by: Dicoding Academy</p>
                         <p class="text-gray-500 text-sm">Completed: January 2024</p>
                     </div>
                 </div>
+                
+                <!-- Additional Certificates (Hidden by default) -->
+                <div class="certificate-item hidden bg-gray-50 rounded-lg overflow-hidden shadow-md hover:shadow-lg transition border border-gray-200">
+                    <img src="https://lh3.googleusercontent.com/pw/AP1GczNxerJWZ9VBCbmGrhoWkM05MRqBVVbY_x0WEK4cQUnDFFuvOqoC5kMMkjIlnt0peGKQ8GDO_EiXz_4DELPYYDoGOXg8QfKxepRcb4uz-ketZxv1jy-lvjj7kq-bdvY3CxR18R5kw3BECJ_QkdL0AgwF=w1299-h919-s-no-gm?authuser=0" alt="Certificate 4" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold mb-2 text-gray-800">React Advanced Concepts</h3>
+                        <p class="text-gray-600 mb-4">Issued by: Dicoding Academy</p>
+                        <p class="text-gray-500 text-sm">Completed: August 2023</p>
+                    </div>
+                </div>
+                
+                <div class="certificate-item hidden bg-gray-50 rounded-lg overflow-hidden shadow-md hover:shadow-lg transition border border-gray-200">
+                    <img src="https://lh3.googleusercontent.com/pw/AP1GczMboWD3cHN20WZVaM0JyI-yzqTS63NTGLhnVDOX1Jm2eTIWhMHtRG_NKw82zlhFkwKeWHpbpptuJQfSbf0xtFFxaJt8aVQkO2y7wceXcfYZQf_j_TB-gY3Fruqenf5cO4Smaeb9YAH6XiObCIpuyVrm=w1300-h919-s-no-gm?authuser=0" alt="Certificate 5" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold mb-2 text-gray-800">Python for Data Analysis</h3>
+                        <p class="text-gray-600 mb-4">Issued by: KelasFullstack - Codepolitan</p>
+                        <p class="text-gray-500 text-sm">Completed: November 2023</p>
+                    </div>
+                </div>
+                
+                <div class="certificate-item hidden bg-gray-50 rounded-lg overflow-hidden shadow-md hover:shadow-lg transition border border-gray-200">
+                    <img src="https://lh3.googleusercontent.com/pw/AP1GczMngTUqd3te_XWNlN79NN4mvgUbUr6kdrz2qe3M1nAdTyWxGmHJJWLRtkbBAqTgbql8aqpyTBOdxFOMWzkdV725mslAhqrMe24QDmGjX7quRO-11Jya9e1yNM98XJP-FKtTQrUfN0qT83N3Qp79bcCu=w1300-h919-s-no-gm?authuser=0" alt="Certificate 6" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold mb-2 text-gray-800">DevOps Fundamentals</h3>
+                        <p class="text-gray-600 mb-4">Issued by: KelasFullstack - Codepolitan</p>
+                        <p class="text-gray-500 text-sm">Completed: February 2024</p>
+                    </div>
+                </div>
+
+                <div class="certificate-item hidden bg-gray-50 rounded-lg overflow-hidden shadow-md hover:shadow-lg transition border border-gray-200">
+                    <img src="https://lh3.googleusercontent.com/pw/AP1GczOIpLkQFgVJJBaDmTvs7NZP0Htsz7UEOCzJu-heCw9uttFGa8aRJRbfzf7Ctp1MgklvoxE1LCn1x9mipgDkA-gv-_BiKbnSGlIPk21yX1bG1D0M9nJHCcHIE5r4s9DuXgZCbJNYH6SYLRcj47Z8MjBJ=w1300-h919-s-no-gm?authuser=0" alt="Certificate 6" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold mb-2 text-gray-800">DevOps Fundamentals</h3>
+                        <p class="text-gray-600 mb-4">Issued by: KelasFullstack - Codepolitan</p>
+                        <p class="text-gray-500 text-sm">Completed: February 2024</p>
+                    </div>
+                </div>
+
+                <div class="certificate-item hidden bg-gray-50 rounded-lg overflow-hidden shadow-md hover:shadow-lg transition border border-gray-200">
+                    <img src="https://lh3.googleusercontent.com/pw/AP1GczOLlbsdWJD3ulE_xdxStjbDmabG-Bq9ZWVdfVxnl12kSuHTYNLG91YXutRJoTxSQk7jPhp2TcIPjM572fyFL1doBzF1Yw3nRUAURVl86THVWpF8Cy5BuZw2CRc_nfwtm3PNjzxpqoNu73weh9Su-jtn=w1300-h919-s-no-gm?authuser=0" alt="Certificate 6" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold mb-2 text-gray-800">DevOps Fundamentals</h3>
+                        <p class="text-gray-600 mb-4">Issued by: KelasFullstack - Codepolitan</p>
+                        <p class="text-gray-500 text-sm">Completed: February 2024</p>
+                    </div>
+                </div>
+
+                <div class="certificate-item hidden bg-gray-50 rounded-lg overflow-hidden shadow-md hover:shadow-lg transition border border-gray-200">
+                    <img src="https://lh3.googleusercontent.com/pw/AP1GczMl6s8ni8dE-cYs_jY3oT0l8_T9pJdn64yFOUX5j9-WrV9RWXvMXk0NvvZz81GzyvQM2iUpEKVsByrGbUOVI-Ebv0chq8cUy_CmRnvsuTgd4IgMqtf0y8aIei_Co332ENM22gDSumdqsCkfQVnMtXts=w1300-h919-s-no-gm?authuser=0" alt="Certificate 6" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold mb-2 text-gray-800">DevOps Fundamentals</h3>
+                        <p class="text-gray-600 mb-4">Issued by: KelasFullstack - Codepolitan</p>
+                        <p class="text-gray-500 text-sm">Completed: February 2024</p>
+                    </div>
+                </div>
+
+                <div class="certificate-item hidden bg-gray-50 rounded-lg overflow-hidden shadow-md hover:shadow-lg transition border border-gray-200">
+                    <img src="https://lh3.googleusercontent.com/pw/AP1GczNNh8KKK1iMSL0WJMqSq9yxV4ukX0xXGnJH0Xn4LtGsuzmOyBGzHzTeXQcxe7a1W_5L0m1lZp2Ske9FDNDMDNVIBBavy2iKQhhz077slR82bc-xPKD5TGiTfXk7pMI-EvP-y-JbyLJcuX8ELP_tzLRI=w1300-h919-s-no-gm?authuser=0" alt="Certificate 6" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold mb-2 text-gray-800">DevOps Fundamentals</h3>
+                        <p class="text-gray-600 mb-4">Issued by: KelasFullstack - Codepolitan</p>
+                        <p class="text-gray-500 text-sm">Completed: February 2024</p>
+                    </div>
+                </div>
+
+                <div class="certificate-item hidden bg-gray-50 rounded-lg overflow-hidden shadow-md hover:shadow-lg transition border border-gray-200">
+                    <img src="https://lh3.googleusercontent.com/pw/AP1GczNxlVj-VJfJF2weqWFBxsGp7ShSHZFAVpSgifpt5mPOopm1UjdNwqOE5ERaiSYdd5rp7mohv1J9s4ETZ2iVhW1BF6_GMsgklxkdnTilottXngDiZAZe6gmd_TVeGNSvdvG5k7ULZAwaqnxrtQXg_O9n=w1300-h919-s-no-gm?authuser=0" alt="Certificate 6" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold mb-2 text-gray-800">DevOps Fundamentals</h3>
+                        <p class="text-gray-600 mb-4">Issued by: KelasFullstack - Codepolitan</p>
+                        <p class="text-gray-500 text-sm">Completed: February 2024</p>
+                    </div>
+                </div>
+
+                <div class="certificate-item hidden bg-gray-50 rounded-lg overflow-hidden shadow-md hover:shadow-lg transition border border-gray-200">
+                    <img src="https://lh3.googleusercontent.com/pw/AP1GczPaVep4-ICrpZueHwABY5uiMDJoi6B60Z63d8MEby4eeQxpiw1J0lBJFwAKJ8YjHxDir9XSLFr_09HMKg0Hm21Bt9zU-xq5s0CpmZTyYRYl103yAWbCvtly6Q9aZAUSsS-mrNoemLiV1vVkn6OxGkgk=w1300-h919-s-no-gm?authuser=0" alt="Certificate 6" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold mb-2 text-gray-800">DevOps Fundamentals</h3>
+                        <p class="text-gray-600 mb-4">Issued by: KelasFullstack - Codepolitan</p>
+                        <p class="text-gray-500 text-sm">Completed: February 2024</p>
+                    </div>
+                </div>
+
+                <div class="certificate-item hidden bg-gray-50 rounded-lg overflow-hidden shadow-md hover:shadow-lg transition border border-gray-200">
+                    <img src="https://lh3.googleusercontent.com/pw/AP1GczPuD59zfJ0jBxq1RD_5xEhQZ1965QWoPFPjQyxLMFdWfenI_F_TBF33Y3rRwFT-n7C_1H3cKGC2qj9alvVDzeUN7YLZl6_kHSxuyaAFwm21MGsG4wfLRjxUsHj83nj1MFxP43HpAYCWctMIPyLWGaqx=w1300-h919-s-no-gm?authuser=0" alt="Certificate 6" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold mb-2 text-gray-800">DevOps Fundamentals</h3>
+                        <p class="text-gray-600 mb-4">Issued by: KelasFullstack - Codepolitan</p>
+                        <p class="text-gray-500 text-sm">Completed: February 2024</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="text-center mt-10">
+                <button id="showMoreBtn" class="px-6 py-3 bg-amber-500 text-white font-medium rounded-lg hover:bg-amber-600 transition">
+                    Show More Certificates
+                </button>
             </div>
         </div>
     </section>
@@ -278,20 +424,20 @@
                             <svg class="w-5 h-5 mr-2 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/>
                             </svg>
-                            <span>andri@example.com</span>
+                            <span>irvans2731@gmail.com</span>
                         </li>
                         <li class="flex items-start">
                             <svg class="w-5 h-5 mr-2 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/>
                             </svg>
-                            <span>+62 812 3456 7890</span>
+                            <span>+62 851 6122 5409</span>
                         </li>
                         <li class="flex items-start">
                             <svg class="w-5 h-5 mr-2 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/>
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/>
                             </svg>
-                            <span>Jakarta, Indonesia</span>
+                            <span>Tangerang, Indonesia</span>
                         </li>
                     </ul>
                 </div>
@@ -309,6 +455,66 @@
             const menu = document.getElementById('mobile-menu');
             menu.classList.toggle('hidden');
         });
+
+        // SHOW MORE CERTIFICATE
+        document.addEventListener('DOMContentLoaded', function() {
+        const showMoreBtn = document.getElementById('showMoreBtn');
+        const certificateItems = document.querySelectorAll('.certificate-item');
+        let showingAll = false;
+        
+        // Initially show only first 3 certificates
+        certificateItems.forEach((item, index) => {
+            if (index >= 3) {
+                item.classList.add('hidden');
+            }
+        });
+        
+        showMoreBtn.addEventListener('click', function() {
+            showingAll = !showingAll;
+            
+            certificateItems.forEach((item, index) => {
+                if (index >= 3) {
+                    item.classList.toggle('hidden');
+                }
+            });
+            
+            showMoreBtn.textContent = showingAll ? 'Show Less' : 'Show More Certificates';
+        });
+    });
+
+
+    // SHOW MORE PROJECTS
+    document.addEventListener('DOMContentLoaded', function() {
+        const showMoreBtn = document.getElementById('showMoreProjectsBtn');
+        const projectItems = document.querySelectorAll('.project-item');
+        let showingAll = false;
+        
+        // Initially show only first 3 projects
+        projectItems.forEach((item, index) => {
+            if (index >= 3) {
+                item.classList.add('hidden');
+            }
+        });
+        
+        showMoreBtn.addEventListener('click', function() {
+            showingAll = !showingAll;
+            
+            projectItems.forEach((item, index) => {
+                if (index >= 3) {
+                    item.classList.toggle('hidden');
+                }
+            });
+            
+            showMoreBtn.textContent = showingAll ? 'Show Less' : 'Show More Projects';
+            
+            // Smooth scroll to maintain button visibility when showing more
+            if (showingAll) {
+                setTimeout(() => {
+                    showMoreBtn.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+                }, 300);
+            }
+        });
+    });
     </script>
 </body>
 </html>
