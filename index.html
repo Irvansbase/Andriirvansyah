@@ -5,8 +5,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Andri Irvansyah - Portfolio</title>
     <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
 </head>
-<body class="bg-gray-50 font-sans">
+<body class="bg-gray-50">
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+        }
+    </style>
     <!-- Header/Navigation -->
     <header class="bg-gray-800 sticky top-0 z-50 shadow-lg">
         <nav class="container mx-auto px-4 py-3 flex justify-between items-center">
@@ -37,10 +45,6 @@
             <a href="#contact" class="block px-3 py-2 text-green-200 hover:text-white hover:bg-gray-700 rounded transition duration-300">Contact</a>
         </div>
     </header>
-
-    
-    
-
     <!-- Hero Section -->
     <section class="py-12 md:py-20 bg-gradient-to-r from-gray-900 to-gray-800 text-white">
         <div class="container mx-auto px-4 flex flex-col md:flex-row items-center">
@@ -111,15 +115,13 @@
                             <span class="px-2 py-1 bg-gray-100 rounded text-sm text-gray-800">CSS</span>
                             <span class="px-2 py-1 bg-gray-100 rounded text-sm text-gray-800">JavaScript</span>
                         </div>
-                        <a href="#" class="text-green-500 hover:text-green-700 font-medium flex gap-2">
-                            <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#22c55e"><path d="M791-55 280-566l-87 87 183 183-56 56L80-480l143-143L55-791l57-57 736 736-57 57Zm-54-282-57-57 87-87-183-183 56-56 240 240-143 143Z"/></svg>
-                            View Project →</a>
+                        <a href="#" class="text-green-500 hover:text-green-700 font-medium">View Project →</a>
                     </div>
                 </div>
                 
                 <!-- Project 2 (Visible by default) -->
                 <div class="project-item bg-white rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition">
-                    <img src="https://via.placeholder.com/600x400" alt="Project 2" class="w-full h-min-screen object-cover">
+                    <img src="https://picsum.photos/300/145" alt="Project 2" class="w-full h-min-screen object-cover">
                     <div class="p-6">
                         <h3 class="text-xl font-semibold mb-2 text-gray-800">Task Management System</h3>
                         <p class="text-gray-600 mb-4">A backend system for task management with real-time updates, team collaboration features, and analytics dashboard.</p>
@@ -128,15 +130,13 @@
                             <span class="px-2 py-1 bg-gray-100 rounded text-sm text-gray-800">PostgreSQL</span>
                             <span class="px-2 py-1 bg-gray-100 rounded text-sm text-gray-800">Socket.io</span>
                         </div>
-                        <a href="#" class="text-green-500 hover:text-green-700 font-medium flex gap-2">
-                            <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#22c55e"><path d="M791-55 280-566l-87 87 183 183-56 56L80-480l143-143L55-791l57-57 736 736-57 57Zm-54-282-57-57 87-87-183-183 56-56 240 240-143 143Z"/></svg>
-                            View Project →</a>
+                        <a href="#" class="text-green-500 hover:text-green-700 font-medium">View Project →</a>
                     </div>
                 </div>
                 
                 <!-- Project 3 (Visible by default) -->
                 <div class="project-item bg-white rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition">
-                    <img src="https://via.placeholder.com/600x400" alt="Project 3" class="w-full h-min-screen object-cover">
+                    <img src="https://picsum.photos/300/145" alt="Project 3" class="w-full h-min-screen object-cover">
                     <div class="p-6">
                         <h3 class="text-xl font-semibold mb-2 text-gray-800">Authentication Microservice</h3>
                         <p class="text-gray-600 mb-4">A scalable authentication service with JWT, OAuth 2.0, and role-based access control for multiple applications.</p>
@@ -145,60 +145,57 @@
                             <span class="px-2 py-1 bg-gray-100 rounded text-sm text-gray-800">Redis</span>
                             <span class="px-2 py-1 bg-gray-100 rounded text-sm text-gray-800">Docker</span>
                         </div>
-                        <a href="#" class="text-green-500 hover:text-green-700 font-medium flex gap-2">
-                            <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#22c55e"><path d="M791-55 280-566l-87 87 183 183-56 56L80-480l143-143L55-791l57-57 736 736-57 57Zm-54-282-57-57 87-87-183-183 56-56 240 240-143 143Z"/></svg>
-                            View Project →</a>
+                        <a href="#" class="text-green-500 hover:text-green-700 font-medium">View Project →</a>
                     </div>
                 </div>
                 
                 <!-- Additional Projects (Hidden by default) -->
-                <div class="project-item hidden bg-white rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition">
-                    <img src="https://via.placeholder.com/600x400" alt="Project 4" class="w-full h-min-screen object-cover">
+                 <!-- Project 1 (Visible by default) -->
+                <div class="project-item bg-white rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition w-full h-min-screen">
+                    <img src="https://picsum.photos/300/145" alt="Project 1" class="w-full h-min-screen object-cover">
                     <div class="p-6">
-                        <h3 class="text-xl font-semibold mb-2 text-gray-800">Inventory Management API</h3>
-                        <p class="text-gray-600 mb-4">A comprehensive inventory management system with barcode scanning and reporting features.</p>
+                        <h3 class="text-xl font-semibold mb-2 text-gray-800">Landing Page</h3>
+                        <p class="text-gray-600 mb-4">An interactive landing page to promote local cacao products with product info, appealing visuals, and a direct order button.</p>
                         <div class="flex flex-wrap gap-2 mb-4">
-                            <span class="px-2 py-1 bg-gray-100 rounded text-sm text-gray-800">Python</span>
-                            <span class="px-2 py-1 bg-gray-100 rounded text-sm text-gray-800">Django</span>
-                            <span class="px-2 py-1 bg-gray-100 rounded text-sm text-gray-800">MySQL</span>
+                            <span class="px-2 py-1 bg-gray-100 rounded text-sm text-gray-800">HTML</span>
+                            <span class="px-2 py-1 bg-gray-100 rounded text-sm text-gray-800">CSS</span>
+                            <span class="px-2 py-1 bg-gray-100 rounded text-sm text-gray-800">JavaScript</span>
                         </div>
-                        <a href="#" class="text-green-500 hover:text-green-700 font-medium flex gap-2">
-                            <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#22c55e"><path d="M791-55 280-566l-87 87 183 183-56 56L80-480l143-143L55-791l57-57 736 736-57 57Zm-54-282-57-57 87-87-183-183 56-56 240 240-143 143Z"/></svg>
-                            View Project →</a>
+                        <a href="#" class="text-green-500 hover:text-green-700 font-medium">View Project →</a>
                     </div>
                 </div>
                 
-                <div class="project-item hidden bg-white rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition">
-                    <img src="https://via.placeholder.com/600x400" alt="Project 5" class="w-full h-min-screen object-cover">
+                <!-- Project 2 (Visible by default) -->
+                <div class="project-item bg-white rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition">
+                    <img src="https://picsum.photos/300/145" alt="Project 2" class="w-full h-min-screen object-cover">
                     <div class="p-6">
-                        <h3 class="text-xl font-semibold mb-2 text-gray-800">Real-time Chat Application</h3>
-                        <p class="text-gray-600 mb-4">A full-stack chat application with rooms, private messaging, and file sharing capabilities.</p>
+                        <h3 class="text-xl font-semibold mb-2 text-gray-800">Task Management System</h3>
+                        <p class="text-gray-600 mb-4">A backend system for task management with real-time updates, team collaboration features, and analytics dashboard.</p>
                         <div class="flex flex-wrap gap-2 mb-4">
-                            <span class="px-2 py-1 bg-gray-100 rounded text-sm text-gray-800">React</span>
-                            <span class="px-2 py-1 bg-gray-100 rounded text-sm text-gray-800">Node.js</span>
-                            <span class="px-2 py-1 bg-gray-100 rounded text-sm text-gray-800">WebSockets</span>
+                            <span class="px-2 py-1 bg-gray-100 rounded text-sm text-gray-800">NestJS</span>
+                            <span class="px-2 py-1 bg-gray-100 rounded text-sm text-gray-800">PostgreSQL</span>
+                            <span class="px-2 py-1 bg-gray-100 rounded text-sm text-gray-800">Socket.io</span>
                         </div>
-                        <a href="#" class="text-green-500 hover:text-green-700 font-medium flex gap-2">
-                            <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#22c55e"><path d="M791-55 280-566l-87 87 183 183-56 56L80-480l143-143L55-791l57-57 736 736-57 57Zm-54-282-57-57 87-87-183-183 56-56 240 240-143 143Z"/></svg>
-                            View Project →</a>
+                        <a href="#" class="text-green-500 hover:text-green-700 font-medium">View Project →</a>
                     </div>
                 </div>
                 
-                <div class="project-item hidden bg-white rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition">
-                    <img src="https://via.placeholder.com/600x400" alt="Project 6" class="w-full h-min-screen object-cover">
+                <!-- Project 3 (Visible by default) -->
+                <div class="project-item bg-white rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition">
+                    <img src="https://picsum.photos/300/145" alt="Project 3" class="w-full h-min-screen object-cover">
                     <div class="p-6">
-                        <h3 class="text-xl font-semibold mb-2 text-gray-800">Data Processing Pipeline</h3>
-                        <p class="text-gray-600 mb-4">An ETL pipeline for processing large datasets with data validation and transformation capabilities.</p>
+                        <h3 class="text-xl font-semibold mb-2 text-gray-800">Authentication Microservice</h3>
+                        <p class="text-gray-600 mb-4">A scalable authentication service with JWT, OAuth 2.0, and role-based access control for multiple applications.</p>
                         <div class="flex flex-wrap gap-2 mb-4">
-                            <span class="px-2 py-1 bg-gray-100 rounded text-sm text-gray-800">Python</span>
-                            <span class="px-2 py-1 bg-gray-100 rounded text-sm text-gray-800">Apache Airflow</span>
-                            <span class="px-2 py-1 bg-gray-100 rounded text-sm text-gray-800">BigQuery</span>
+                            <span class="px-2 py-1 bg-gray-100 rounded text-sm text-gray-800">Go</span>
+                            <span class="px-2 py-1 bg-gray-100 rounded text-sm text-gray-800">Redis</span>
+                            <span class="px-2 py-1 bg-gray-100 rounded text-sm text-gray-800">Docker</span>
                         </div>
-                        <a href="#" class="text-green-500 hover:text-green-700 font-medium flex gap-2">
-                            <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#22c55e"><path d="M791-55 280-566l-87 87 183 183-56 56L80-480l143-143L55-791l57-57 736 736-57 57Zm-54-282-57-57 87-87-183-183 56-56 240 240-143 143Z"/></svg>
-                            View Project →</a>
+                        <a href="#" class="text-green-500 hover:text-green-700 font-medium">View Project →</a>
                     </div>
                 </div>
+                
+               
             </div>
             
             <div class="text-center mt-10">
@@ -216,7 +213,8 @@
             <h2 class="text-3xl md:text-4xl font-bold text-center mb-12 text-gray-800">My <span class="text-amber-500">Certificates</span></h2>
             
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 flex justify-between">
-                <!-- April 2025 Certificates -->
+              
+                <!-- Additional Certificates (Apr 2025) -->
                 <div class="certificate-item bg-gray-50 rounded-lg overflow-hidden shadow-md hover:shadow-lg transition border border-gray-200">
                     <img src="https://lh3.googleusercontent.com/pw/AP1GczMboWD3cHN20WZVaM0JyI-yzqTS63NTGLhnVDOX1Jm2eTIWhMHtRG_NKw82zlhFkwKeWHpbpptuJQfSbf0xtFFxaJt8aVQkO2y7wceXcfYZQf_j_TB-gY3Fruqenf5cO4Smaeb9YAH6XiObCIpuyVrm=w1300-h919-s-no-gm?authuser=0" alt="Certificate 5" class="w-full h-min-screen object-cover">
                     <div class="p-6">
@@ -224,9 +222,11 @@
                         <p class="text-gray-600 mb-2">Issued by: KelasFullstack - Codepolitan</p>
                         <p class="text-gray-500 text-sm mb-4">Completed: April 2025</p>
                         <a href="https://lh3.googleusercontent.com/pw/AP1GczMboWD3cHN20WZVaM0JyI-yzqTS63NTGLhnVDOX1Jm2eTIWhMHtRG_NKw82zlhFkwKeWHpbpptuJQfSbf0xtFFxaJt8aVQkO2y7wceXcfYZQf_j_TB-gY3Fruqenf5cO4Smaeb9YAH6XiObCIpuyVrm=w1300-h919-s-no-gm?authuser=0" class="text-green-600 text-sm hover:text-green-800">View Certificate →</a>
+                    
                     </div>
                 </div>
                 
+                <!-- Additional Certificates (Apr 2025) -->
                 <div class="certificate-item bg-gray-50 rounded-lg overflow-hidden shadow-md hover:shadow-lg transition border border-gray-200">
                     <img src="https://lh3.googleusercontent.com/pw/AP1GczMngTUqd3te_XWNlN79NN4mvgUbUr6kdrz2qe3M1nAdTyWxGmHJJWLRtkbBAqTgbql8aqpyTBOdxFOMWzkdV725mslAhqrMe24QDmGjX7quRO-11Jya9e1yNM98XJP-FKtTQrUfN0qT83N3Qp79bcCu=w1300-h919-s-no-gm?authuser=0" alt="Certificate 6" class="w-full h-min-screen object-cover">
                     <div class="p-6">
@@ -234,9 +234,11 @@
                         <p class="text-gray-600 mb-2">Issued by: KelasFullstack - Codepolitan</p>
                         <p class="text-gray-500 text-sm mb-4">Completed: April 2025</p>
                         <a href="https://lh3.googleusercontent.com/pw/AP1GczMngTUqd3te_XWNlN79NN4mvgUbUr6kdrz2qe3M1nAdTyWxGmHJJWLRtkbBAqTgbql8aqpyTBOdxFOMWzkdV725mslAhqrMe24QDmGjX7quRO-11Jya9e1yNM98XJP-FKtTQrUfN0qT83N3Qp79bcCu=w1300-h919-s-no-gm?authuser=0" class="text-green-600 text-sm hover:text-green-800">View Certificate →</a>
+                    
                     </div>
                 </div>
-        
+
+                <!-- Additional Certificates (Apr 2025) -->
                 <div class="certificate-item bg-gray-50 rounded-lg overflow-hidden shadow-md hover:shadow-lg transition border border-gray-200">
                     <img src="https://lh3.googleusercontent.com/pw/AP1GczOIpLkQFgVJJBaDmTvs7NZP0Htsz7UEOCzJu-heCw9uttFGa8aRJRbfzf7Ctp1MgklvoxE1LCn1x9mipgDkA-gv-_BiKbnSGlIPk21yX1bG1D0M9nJHCcHIE5r4s9DuXgZCbJNYH6SYLRcj47Z8MjBJ=w1300-h919-s-no-gm?authuser=0" alt="Certificate 6" class="w-full h-min-screen object-cover">
                     <div class="p-6">
@@ -244,21 +246,24 @@
                         <p class="text-gray-600 mb-2">Issued by: KelasFullstack - Codepolitan</p>
                         <p class="text-gray-500 text-sm mb-4">Completed: April 2025</p>
                         <a href="https://lh3.googleusercontent.com/pw/AP1GczOIpLkQFgVJJBaDmTvs7NZP0Htsz7UEOCzJu-heCw9uttFGa8aRJRbfzf7Ctp1MgklvoxE1LCn1x9mipgDkA-gv-_BiKbnSGlIPk21yX1bG1D0M9nJHCcHIE5r4s9DuXgZCbJNYH6SYLRcj47Z8MjBJ=w1300-h919-s-no-gm?authuser=0" class="text-green-600 text-sm hover:text-green-800">View Certificate →</a>
+                    
                     </div>
                 </div>
-        
-                <div class="certificate-item bg-gray-50 rounded-lg overflow-hidden shadow-md hover:shadow-lg transition border border-gray-200">
+
+                <!-- Additional Certificates (Apr 2025) -->
+                <div class="certificate-item hidden bg-gray-50 rounded-lg overflow-hidden shadow-md hover:shadow-lg transition border border-gray-200">
                     <img src="https://lh3.googleusercontent.com/pw/AP1GczOLlbsdWJD3ulE_xdxStjbDmabG-Bq9ZWVdfVxnl12kSuHTYNLG91YXutRJoTxSQk7jPhp2TcIPjM572fyFL1doBzF1Yw3nRUAURVl86THVWpF8Cy5BuZw2CRc_nfwtm3PNjzxpqoNu73weh9Su-jtn=w1300-h919-s-no-gm?authuser=0" alt="Certificate 6" class="w-full h-min-screen object-cover">
                     <div class="p-6">
                         <h3 class="text-xl font-semibold mb-2 text-gray-800">Object-Oriented Programming in JavaScript</h3>
                         <p class="text-gray-600 mb-2">Issued by: KelasFullstack - Codepolitan</p>
                         <p class="text-gray-500 text-sm mb-4">Completed: April 2025</p>
                         <a href="https://lh3.googleusercontent.com/pw/AP1GczOLlbsdWJD3ulE_xdxStjbDmabG-Bq9ZWVdfVxnl12kSuHTYNLG91YXutRJoTxSQk7jPhp2TcIPjM572fyFL1doBzF1Yw3nRUAURVl86THVWpF8Cy5BuZw2CRc_nfwtm3PNjzxpqoNu73weh9Su-jtn=w1300-h919-s-no-gm?authuser=0" class="text-green-600 text-sm hover:text-green-800">View Certificate →</a>
+                    
                     </div>
                 </div>
-        
-                <!-- February 2025 Certificates -->
-                <div class="certificate-item bg-gray-50 rounded-lg overflow-hidden shadow-md hover:shadow-lg transition border border-gray-200">
+
+                <!-- Certificate 1 (Feb 2025) -->
+                <div class="certificate-item hidden bg-gray-50 rounded-lg overflow-hidden shadow-md hover:shadow-lg transition border border-gray-200">
                     <img src="https://lh3.googleusercontent.com/pw/AP1GczN8HE_g69HFGqYUURp3pJSNikBmCxx2uQm_Vc2t8N2qf61utg6c_NdmP_fzVM3Y8XrORY5oqvAyzTFIR4wvp4DHMoB10_FXAAfknJqOUmxolgH0MMWj4NdknRcUnAah8gihGsZRDCT4arC6AtsbDtwp=w1229-h827-s-no-gm?authuser=0" alt="Certificate 1" class="w-full h-min-screen object-cover">
                     <div class="p-6">
                         <h3 class="text-xl font-semibold mb-2 text-gray-800">Responsive Web Design</h3>
@@ -267,7 +272,8 @@
                         <a href="https://lh3.googleusercontent.com/pw/AP1GczN8HE_g69HFGqYUURp3pJSNikBmCxx2uQm_Vc2t8N2qf61utg6c_NdmP_fzVM3Y8XrORY5oqvAyzTFIR4wvp4DHMoB10_FXAAfknJqOUmxolgH0MMWj4NdknRcUnAah8gihGsZRDCT4arC6AtsbDtwp=w1229-h827-s-no-gm?authuser=0" class="text-green-600 text-sm hover:text-green-800">View Certificate →</a>
                     </div>
                 </div>
-                
+
+                <!-- Additional Certificates (Feb 2025) -->
                 <div class="certificate-item hidden bg-gray-50 rounded-lg overflow-hidden shadow-md hover:shadow-lg transition border border-gray-200">
                     <img src="https://lh3.googleusercontent.com/pw/AP1GczMl6s8ni8dE-cYs_jY3oT0l8_T9pJdn64yFOUX5j9-WrV9RWXvMXk0NvvZz81GzyvQM2iUpEKVsByrGbUOVI-Ebv0chq8cUy_CmRnvsuTgd4IgMqtf0y8aIei_Co332ENM22gDSumdqsCkfQVnMtXts=w1300-h919-s-no-gm?authuser=0" alt="Certificate 6" class="w-full h-min-screen object-cover">
                     <div class="p-6">
@@ -277,7 +283,8 @@
                         <a href="https://lh3.googleusercontent.com/pw/AP1GczMl6s8ni8dE-cYs_jY3oT0l8_T9pJdn64yFOUX5j9-WrV9RWXvMXk0NvvZz81GzyvQM2iUpEKVsByrGbUOVI-Ebv0chq8cUy_CmRnvsuTgd4IgMqtf0y8aIei_Co332ENM22gDSumdqsCkfQVnMtXts=w1300-h919-s-no-gm?authuser=0" class="text-green-600 text-sm hover:text-green-800">View Certificate →</a>
                     </div>
                 </div>
-        
+
+                <!-- Additional Certificates (Feb 2025) -->
                 <div class="certificate-item hidden bg-gray-50 rounded-lg overflow-hidden shadow-md hover:shadow-lg transition border border-gray-200">
                     <img src="https://lh3.googleusercontent.com/pw/AP1GczNNh8KKK1iMSL0WJMqSq9yxV4ukX0xXGnJH0Xn4LtGsuzmOyBGzHzTeXQcxe7a1W_5L0m1lZp2Ske9FDNDMDNVIBBavy2iKQhhz077slR82bc-xPKD5TGiTfXk7pMI-EvP-y-JbyLJcuX8ELP_tzLRI=w1300-h919-s-no-gm?authuser=0" alt="Certificate 6" class="w-full h-min-screen object-cover">
                     <div class="p-6">
@@ -287,7 +294,8 @@
                         <a href="https://lh3.googleusercontent.com/pw/AP1GczNNh8KKK1iMSL0WJMqSq9yxV4ukX0xXGnJH0Xn4LtGsuzmOyBGzHzTeXQcxe7a1W_5L0m1lZp2Ske9FDNDMDNVIBBavy2iKQhhz077slR82bc-xPKD5TGiTfXk7pMI-EvP-y-JbyLJcuX8ELP_tzLRI=w1300-h919-s-no-gm?authuser=0" class="text-green-600 text-sm hover:text-green-800">View Certificate →</a>
                     </div>
                 </div>
-        
+
+                <!-- Additional Certificates (Feb 2025) -->
                 <div class="certificate-item hidden bg-gray-50 rounded-lg overflow-hidden shadow-md hover:shadow-lg transition border border-gray-200">
                     <img src="https://lh3.googleusercontent.com/pw/AP1GczNxlVj-VJfJF2weqWFBxsGp7ShSHZFAVpSgifpt5mPOopm1UjdNwqOE5ERaiSYdd5rp7mohv1J9s4ETZ2iVhW1BF6_GMsgklxkdnTilottXngDiZAZe6gmd_TVeGNSvdvG5k7ULZAwaqnxrtQXg_O9n=w1300-h919-s-no-gm?authuser=0" alt="Certificate 6" class="w-full h-min-screen object-cover">
                     <div class="p-6">
@@ -297,7 +305,8 @@
                         <a href="https://lh3.googleusercontent.com/pw/AP1GczNxlVj-VJfJF2weqWFBxsGp7ShSHZFAVpSgifpt5mPOopm1UjdNwqOE5ERaiSYdd5rp7mohv1J9s4ETZ2iVhW1BF6_GMsgklxkdnTilottXngDiZAZe6gmd_TVeGNSvdvG5k7ULZAwaqnxrtQXg_O9n=w1300-h919-s-no-gm?authuser=0" class="text-green-600 text-sm hover:text-green-800">View Certificate →</a>
                     </div>
                 </div>
-        
+
+                <!-- Additional Certificates (Feb 2025) -->
                 <div class="certificate-item hidden bg-gray-50 rounded-lg overflow-hidden shadow-md hover:shadow-lg transition border border-gray-200">
                     <img src="https://lh3.googleusercontent.com/pw/AP1GczPaVep4-ICrpZueHwABY5uiMDJoi6B60Z63d8MEby4eeQxpiw1J0lBJFwAKJ8YjHxDir9XSLFr_09HMKg0Hm21Bt9zU-xq5s0CpmZTyYRYl103yAWbCvtly6Q9aZAUSsS-mrNoemLiV1vVkn6OxGkgk=w1300-h919-s-no-gm?authuser=0" alt="Certificate 6" class="w-full h-min-screen object-cover">
                     <div class="p-6">
@@ -307,7 +316,8 @@
                         <a href="https://lh3.googleusercontent.com/pw/AP1GczPaVep4-ICrpZueHwABY5uiMDJoi6B60Z63d8MEby4eeQxpiw1J0lBJFwAKJ8YjHxDir9XSLFr_09HMKg0Hm21Bt9zU-xq5s0CpmZTyYRYl103yAWbCvtly6Q9aZAUSsS-mrNoemLiV1vVkn6OxGkgk=w1300-h919-s-no-gm?authuser=0" class="text-green-600 text-sm hover:text-green-800">View Certificate →</a>
                     </div>
                 </div>
-        
+
+                <!-- Additional Certificates (Feb 2025) -->
                 <div class="certificate-item hidden bg-gray-50 rounded-lg overflow-hidden shadow-md hover:shadow-lg transition border border-gray-200">
                     <img src="https://lh3.googleusercontent.com/pw/AP1GczPuD59zfJ0jBxq1RD_5xEhQZ1965QWoPFPjQyxLMFdWfenI_F_TBF33Y3rRwFT-n7C_1H3cKGC2qj9alvVDzeUN7YLZl6_kHSxuyaAFwm21MGsG4wfLRjxUsHj83nj1MFxP43HpAYCWctMIPyLWGaqx=w1300-h919-s-no-gm?authuser=0" alt="Certificate 6" class="w-full h-min-screen object-cover">
                     <div class="p-6">
@@ -317,9 +327,9 @@
                         <a href="https://lh3.googleusercontent.com/pw/AP1GczPuD59zfJ0jBxq1RD_5xEhQZ1965QWoPFPjQyxLMFdWfenI_F_TBF33Y3rRwFT-n7C_1H3cKGC2qj9alvVDzeUN7YLZl6_kHSxuyaAFwm21MGsG4wfLRjxUsHj83nj1MFxP43HpAYCWctMIPyLWGaqx=w1300-h919-s-no-gm?authuser=0" class="text-green-600 text-sm hover:text-green-800">View Certificate →</a>
                     </div>
                 </div>
-        
-                <!-- December 2024 Certificates -->
-                <div class="certificate-item bg-gray-50 rounded-lg overflow-hidden shadow-md hover:shadow-lg transition border border-gray-200">
+
+                <!-- Certificate 2 (Dec 2024) -->
+                <div class="certificate-item hidden bg-gray-50 rounded-lg overflow-hidden shadow-md hover:shadow-lg transition border border-gray-200">
                     <img src="https://lh3.googleusercontent.com/pw/AP1GczMCprE92otc0ZjZTctOg7ShS05B4PhBHhPatulN4LTMQBSnyFLTczbfU17K2w6h4l7QJoVtZ6iyxBDDg9HHZxffcpobj_k9BSXgAP0dTFp9wNbD_dFMWPlSmUYJkWqUhuosaxPpWKrOmF3AfGT_RaaJ=w1299-h919-s-no-gm?authuser=0" alt="Certificate 2" class="w-full h-min-screen object-cover">
                     <div class="p-6">
                         <h3 class="text-xl font-semibold mb-2 text-gray-800">Studying the fundamentals of AI</h3>
@@ -329,16 +339,19 @@
                     </div>
                 </div>
                 
-                <div class="certificate-item bg-gray-50 rounded-lg overflow-hidden shadow-md hover:shadow-lg transition border border-gray-200">
+                <!-- Certificate 3 (Dec 2024) -->
+                <div class="certificate-item hidden bg-gray-50 rounded-lg overflow-hidden shadow-md hover:shadow-lg transition border border-gray-200">
                     <img src="https://lh3.googleusercontent.com/pw/AP1GczPDGmiMvJWUICxU0B-vHg5CJHTpqUBfoKxsp3-svsVdkMpbX7kgBXA4B6sdZ9jL94epjsXQJjs9q8bUhExvRTfOcCandiGXXYgpqPOltLF3_zXWdXQnRDI13dQtsmZZiuHh-dh7-MDuiXD9n-gd9BRJ=w1299-h919-s-no-gm?authuser=0" alt="Certificate 3" class="w-full h-min-screen object-cover">
                     <div class="p-6">
                         <h3 class="text-xl font-semibold mb-2 text-gray-800">Cloud Practicioner Essentials (AWS Certified)</h3>
                         <p class="text-gray-600 mb-2">Issued by: Dicoding Academy</p>
                         <p class="text-gray-500 text-sm mb-4">Completed: December 2024</p>
                         <a href="https://lh3.googleusercontent.com/pw/AP1GczPDGmiMvJWUICxU0B-vHg5CJHTpqUBfoKxsp3-svsVdkMpbX7kgBXA4B6sdZ9jL94epjsXQJjs9q8bUhExvRTfOcCandiGXXYgpqPOltLF3_zXWdXQnRDI13dQtsmZZiuHh-dh7-MDuiXD9n-gd9BRJ=w1299-h919-s-no-gm?authuser=0" class="text-green-600 text-sm hover:text-green-800">View Certificate →</a>
+                    
                     </div>
                 </div>
                 
+                <!-- Additional Certificates (Dec 2024) -->
                 <div class="certificate-item hidden bg-gray-50 rounded-lg overflow-hidden shadow-md hover:shadow-lg transition border border-gray-200">
                     <img src="https://lh3.googleusercontent.com/pw/AP1GczNxerJWZ9VBCbmGrhoWkM05MRqBVVbY_x0WEK4cQUnDFFuvOqoC5kMMkjIlnt0peGKQ8GDO_EiXz_4DELPYYDoGOXg8QfKxepRcb4uz-ketZxv1jy-lvjj7kq-bdvY3CxR18R5kw3BECJ_QkdL0AgwF=w1299-h919-s-no-gm?authuser=0" alt="Certificate 4" class="w-full h-min-screen object-cover">
                     <div class="p-6">
@@ -346,6 +359,7 @@
                         <p class="text-gray-600 mb-2">Issued by: Dicoding Academy</p>
                         <p class="text-gray-500 text-sm mb-4">Completed: December 2024</p>
                         <a href="https://lh3.googleusercontent.com/pw/AP1GczNxerJWZ9VBCbmGrhoWkM05MRqBVVbY_x0WEK4cQUnDFFuvOqoC5kMMkjIlnt0peGKQ8GDO_EiXz_4DELPYYDoGOXg8QfKxepRcb4uz-ketZxv1jy-lvjj7kq-bdvY3CxR18R5kw3BECJ_QkdL0AgwF=w1299-h919-s-no-gm?authuser=0" class="text-green-600 text-sm hover:text-green-800">View Certificate →</a>
+                    
                     </div>
                 </div>
             </div>
